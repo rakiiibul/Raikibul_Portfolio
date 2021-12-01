@@ -419,29 +419,27 @@ transform: scale(1.05);
     background-color:crimson;
 
 }
-.skill_html{
-    width: 90%;
-}
+
 .skill_CSS{
     width: 85%;
 }
 .skill_html{
-    width: 90%;
+    width: 85%;
 }
 .skill_JS{
-    width: 60%;
+    width: 50%;
 }
 .skill_REACT{
-    width: 60%;
+    width: 40%;
 }
 .skill_FB{
-    width: 80%;
+    width: 75%;
 }
 .skill_MYSQL{
     width: 60%;
 }
 .skill_PYTHON{
-    width: 80%;
+    width: 70%;
 }
 .skill_PS{
     width: 85%;
