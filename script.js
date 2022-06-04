@@ -30,13 +30,13 @@ $(document).ready(function(){
     });
     //typing animation screen
     var typed=new Typed(".typing-1",{
-        strings:["Programmer","Developer","Webdesigner"],
+        strings:["Programmer","Data scientist","Data analyst"],
         typeSpeed:100,
         backSpeed:60,
         loop:true
     });
     var typed=new Typed(".typing-2",{
-        strings:["Programmer","Developer","Webdesigner"],
+        strings:["Programmer","Data scientist","Data analyst"],
         typeSpeed:100,
         backSpeed:60,
         loop:true
