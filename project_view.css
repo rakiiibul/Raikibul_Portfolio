@@ -1,0 +1,151 @@
+.projects__timeline--single-item {
+    display: flex;
+}
+
+.row {
+    display: inline-block;
+}
+
+.single-item__projects--content {
+    max-width: 50%;
+    flex-grow: 1
+}
+
+
+/* .justify-content-end {
+    justify-content: flex-end;
+} */
+
+.projects__timeline {
+    position: relative;
+}
+
+.row-projects {
+    display: inline-block
+}
+
+.projects__timeline--vertical-line {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: red;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text-right {
+    text-align: right;
+}
+
+.pr-30 {
+    padding-right: 30px;
+}
+
+.pl-30 {
+    padding-left: 30px;
+}
+
+.single__timeline_bullet {
+    position: absolute;
+    background: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    z-index: 9;
+}
+
+.position-right {
+    right: -8px;
+}
+
+.position-left {
+    left: -8px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 575px) {
+    .projects__timeline--vertical-line {
+        left: 0;
+        transform: unset;
+    }
+    .single-item__projects--content {
+        max-width: 100%;
+    }
+    .position-right {
+        left: -7px;
+        right: auto;
+    }
+    .position-left {
+        left: -7px;
+    }
+    .pr-30 {
+        padding-right: 0;
+        padding-left: 30px;
+    }
+    .text-right {
+        text-align: left;
+    }
+    .single-item__projects--content {
+        padding-bottom: 35px;
+    }
+}
+
+
+/*
+#portfolio {
+    background-color: #25b79f;
+}
+
+#portfolio h2 {
+    padding-bottom: 1.25em;
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio-projects {
+        margin-top: 0.625em;
+    }
+}
+
+.portfolio-projects--title {
+    margin-top: 0.9375em;
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio-projects--title {
+        margin-top: 20%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .portfolio-projects--title {
+        margin-top: 5%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio-projects--desc {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
+
+.portfolio-projects--btn {
+    background: transparent;
+    color: #07374a;
+    border: 1px solid #07374a;
+    border-radius: 5px;
+    margin-bottom: 1.25em;
+}
+
+.portfolio-projects--btn:hover {
+    background: #07374a;
+    color: #f0f0e6;
+}
+
+.portfolio-projects--image {
+    margin-bottom: 1.875em;
+    padding-top: 5%;
+}
