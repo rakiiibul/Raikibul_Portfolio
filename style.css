@@ -1186,14 +1186,17 @@ slider projects css */
   
     .item:nth-child(3) {
       left: 50%;
+      display: none;
     }
   
     .item:nth-child(4) {
       left: calc(50% + 160px);
+        display: none;
     }
   
     .item:nth-child(5) {
       left: calc(50% + 320px);
+      display: none;
     }
   
     .item:nth-child(6) {
@@ -1205,6 +1208,10 @@ slider projects css */
       font-size: 0.75rem;
       left: 1rem;
     }
+    .projects-icons-wrapper img {
+        width: 10px;
+        height: 10px;
+    }
   }
   
   /* Very Small Mobile Screens (max-width: 400px) */
@@ -1214,13 +1221,19 @@ slider projects css */
       height: 200px;
       top: 60%;
     }
+    .projects-icons-wrapper img {
+        width: 10px;
+        height: 10px;
+    }
   
     .item:nth-child(4) {
       left: calc(50% + 140px);
+      display: none;
     }
   
     .item:nth-child(5) {
       left: calc(50% + 280px);
+      display: none;
     }
   
     .item:nth-child(6) {
