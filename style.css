@@ -1265,4 +1265,49 @@ slider projects css */
       display: none;
     }
   }
+  @media (max-width: 400px) {
+    .item {
+      width: 130px;
+      height: 200px;
+      top: 60%;
+    }
+  
+    .item:nth-child(4) {
+      left: calc(50% + 140px);
+    }
+  
+    .item:nth-child(5) {
+      left: calc(50% + 280px);
+    }
+  
+    .item:nth-child(6) {
+      display: none;
+    }
+  
+    .content {
+      width: 90vw;
+      left: 0.5rem;
+    }
+  
+    .projects-icons-wrapper img {
+      width: 14px;
+      height: 14px;
+    }
+  
+    .nav .btn {
+      padding: 0.4rem;
+    }
+  }
+  
+  /* Animation for Content */
+  @keyframes show {
+    0% {
+      filter: blur(5px);
+      transform: translateY(calc(-50% + 75px));
+    }
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }  
   
