@@ -6,12 +6,17 @@
   flex-grow: 1;
   position: relative;
 }
+.education__timeline--single-item h4{
+  color: #52C4F7;
+
+}
 .justify-content-end {
   justify-content: flex-end;
 }
 .education__timeline {
   position: relative;
 }
+
 .education__timeline--vertical-line {
   position: absolute;
   width: 2px;

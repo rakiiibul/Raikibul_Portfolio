@@ -48,19 +48,7 @@ $(document).ready(function () {
             }
         }
     });
-    //typing animation screen
-    var typed = new Typed(".typing-1", {
-        strings: ["Programmer", "Data scientist", "Data analyst"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
-    var typed = new Typed(".typing-2", {
-        strings: ["Programmer", "Data scientist", "Data analyst"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
+  
 
 
     var skillContent = document.getElementsByClassName('skill_content');
@@ -85,7 +73,35 @@ $(document).ready(function () {
 
 });
 
+const slider = document.querySelector('.slider');
 
+function activate(e) {
+const items = document.querySelectorAll('.item');
+if (e.target.matches('.next')) {
+    slider.append(items[0]); // Move the first item to the end (next slide)
+  } 
+  else if (e.target.matches('.prev')) {
+    slider.prepend(items[items.length - 1]); // Move the last item to the front (previous slide)
+  }
+}
+
+document.addEventListener('click',activate,false);
+// Auto-transition for the slider
+function autoTransition() {
+    const items = document.querySelectorAll('.item');
+    slider.append(items[0]); // Automatically move the first item to the end (next slide)
+  }
+  
+  const intervalTime = 3000; 
+  let autoSlide = setInterval(autoTransition, intervalTime);
+  
+  slider.addEventListener('mouseover', () => {
+    clearInterval(autoSlide); 
+  });
+  slider.addEventListener('mouseout', () => {
+    autoSlide = setInterval(autoTransition, intervalTime); 
+  });
+  
 
 function myFunction() {
     var dots = document.getElementById("dots");

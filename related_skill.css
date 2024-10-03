@@ -1,3 +1,7 @@
+
+.stack .title::after {
+    content: "what i know";
+}
 .stack-container {
 	margin: 0 auto;
 	display: flex;
@@ -15,7 +19,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-color: red;
+	background-color: rgb(254, 254, 254);
 	border-radius: 1.5em;
 	box-shadow: yellow;
 	overflow: hidden;
@@ -32,7 +36,8 @@
 	width: 100%;
 	height: 6px;
 	border-radius: 1.5;
-	background-color: var(--primary-alt);
+	/* background-color: var(--primary-alt); */
+	background-color:  #52C4F7;;
 	transition: all 0.2s linear;
 }
 
@@ -44,7 +49,11 @@
 	font-size: 3rem;
 	margin-bottom: 0.2em;
 }
-
+.tech-container img {
+	height: 60px;
+	width: auto;
+	margin-bottom: 0.2em;
+}
 @media (max-width: 950px) {
 	
 	.stack-container i {
