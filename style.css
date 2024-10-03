@@ -1146,7 +1146,7 @@ slider projects css */
       &:hover {
         background-color: #52C4F7;
         transition: all 0.5s ease;
-        color: #000;
+        color: #111;
       }
     }
   }
@@ -1176,7 +1176,7 @@ slider projects css */
   }
   
   /* Responsive Design for Mobile (max-width: 650px) */
-  @media (max-width: 650px) {
+  @media only screen and  (max-width: 650px) {
     .item {
       width: 150px;
       height: 220px;
@@ -1211,12 +1211,11 @@ slider projects css */
   }
   
   /* Very Small Mobile Screens (max-width: 400px) */
-  @media (max-width: 400px) {
+  @media only screen and  (max-width: 400px) {
     .item {
-      width: 100%;
+      width: 130px;
       height: 200px;
       top: 60%;
-      overflow: hidden;
     }
   
     .item:nth-child(4) {
