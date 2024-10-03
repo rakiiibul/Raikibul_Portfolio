@@ -92,7 +92,7 @@ function autoTransition() {
     slider.append(items[0]); // Automatically move the first item to the end (next slide)
   }
   
-  const intervalTime = 3000; 
+  const intervalTime = 30000; 
   let autoSlide = setInterval(autoTransition, intervalTime);
   
   slider.addEventListener('mouseover', () => {
