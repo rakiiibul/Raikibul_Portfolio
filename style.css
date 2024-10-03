@@ -1048,33 +1048,6 @@ slider projects css */
     margin-bottom: 10px; /* Adds spacing between the icons and the description */
   }
   
-
-  /* .a-social-b {
-    position: fixed;
-    top: 50%;
-    right: 0px;
-    z-index: 2;
-    transform: translateY(-50%);
-} */
-
-/* .a-social-b i {
-    color: #52C4F7;
-    font-size: 20px;
-} */
-
-/* .projects-icons-wrapper a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-    height: 50px;
-    padding: 0px;
-    margin: 0px;
-    line-height: 0px;
-    background-color: #fff;
-    border: 1px solid #cbcbcb;
-    box-shadow: 2px 2px 12px rgb(0, 0, 0, 0.2);
-} */
 .projects-icons-wrapper img {
     width: 20px;
     height: 20px;
@@ -1178,17 +1151,102 @@ slider projects css */
       }
     }
   }
+  /* Responsive Design for Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .item {
+      width: 180px;
+      height: 270px;
+    }
   
+    .item:nth-child(4) {
+      left: calc(50% + 200px);
+    }
+  
+    .item:nth-child(5) {
+      left: calc(50% + 380px);
+    }
+  
+    .item:nth-child(6) {
+      display: none; /* Hide the sixth item */
+    }
+  
+    .content {
+      width: min(40vw, 350px);
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* Responsive Design for Mobile (max-width: 650px) */
+  @media (max-width: 650px) {
+    .item {
+      width: 150px;
+      height: 220px;
+      top: 55%;
+    }
+  
+    .item:nth-child(3) {
+      left: 50%;
+    }
+  
+    .item:nth-child(4) {
+      left: calc(50% + 160px);
+    }
+  
+    .item:nth-child(5) {
+      left: calc(50% + 320px);
+    }
+  
+    .item:nth-child(6) {
+      display: none; /* Hide the sixth item */
+    }
+  
+    .content {
+      width: min(50vw, 300px);
+      font-size: 0.75rem;
+      left: 1rem;
+    }
+  }
+  
+  /* Very Small Mobile Screens (max-width: 400px) */
+  @media (max-width: 400px) {
+    .item {
+      width: 130px;
+      height: 200px;
+      top: 60%;
+    }
+  
+    .item:nth-child(4) {
+      left: calc(50% + 140px);
+    }
+  
+    .item:nth-child(5) {
+      left: calc(50% + 280px);
+    }
+  
+    .item:nth-child(6) {
+      display: none;
+    }
+  
+    .content {
+      width: 90vw;
+      left: 0.5rem;
+    }
+  
+    .nav .btn {
+      padding: 0.4rem;
+    }
+  }
+/*   
   @media (width > 650px) and (width < 900px) {
     .content {
       & .title        { font-size: 1rem; }
       & .description  { font-size: 0.7rem; 
         font-size: 0.65rem;
-        display: -webkit-box;        /* Required for the line clamping to work */
-        -webkit-line-clamp: 3;       /* Show only 2 lines */
-        -webkit-box-orient: vertical;/* Required for the line clamping to work */
-        overflow: hidden;            /* Hide the overflow text */
-        text-overflow: ellipsis;     /* Add the ellipsis (...) for overflowed text */
+        display: -webkit-box;        
+        -webkit-line-clamp: 3;     
+        -webkit-box-orient: vertical;
+        overflow: hidden;           
+        text-overflow: ellipsis;     
         height: 3.6rem; 
     }
       & button        { font-size: 0.7rem; }
@@ -1208,13 +1266,13 @@ slider projects css */
     .content {
       & .title        { font-size: 0.9rem; }
       & .description  {
-         font-size: 0.65rem;
-        display: -webkit-box;        /* Required for the line clamping to work */
-        -webkit-line-clamp: 3;       /* Show only 2 lines */
-        -webkit-box-orient: vertical;/* Required for the line clamping to work */
-        overflow: hidden;            /* Hide the overflow text */
-        text-overflow: ellipsis;     /* Add the ellipsis (...) for overflowed text */
-        height: 3.6rem;
+        font-size: 0.65rem;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2rem; 
+  max-height: 3.6rem; 
+  white-space: normal;
      }
       & button        { font-size: 0.7rem; }
     }
@@ -1231,4 +1289,4 @@ slider projects css */
       &:nth-child(6) { left: calc(50% + 420px); opacity: 0; 
         display:none}
     }
-  }
+  } */
